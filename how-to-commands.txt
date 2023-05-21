@@ -8,3 +8,10 @@ Create a project
 .\lein.bat repl - run program
 inside
 (-main)   - to call main funciton
+
+
+
+clj -Sdeps "{:deps {leiningen/leiningen {:mvn/version \""2.9.0\""}}}" -M -m leiningen.core.main new play-cljc gorilla-game
+
+clj -M:dev
+clj -M:dev:windows native

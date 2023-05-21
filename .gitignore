@@ -50,7 +50,7 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
-gorillas-and-bananas/*
+gorillas-and-bananas-old/*
 Machine-Learning-Gorillas-main/*
 snake-app/*
 angry-gorillas/*
