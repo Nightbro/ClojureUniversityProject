@@ -1,0 +1,10 @@
+Create a project
+
+
+.\lein.bat new angry-gorillas
+
+
+
+.\lein.bat repl - run program
+inside
+(-main)   - to call main funciton

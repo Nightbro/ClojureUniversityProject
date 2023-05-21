@@ -50,3 +50,10 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+gorillas-and-bananas/*
+Machine-Learning-Gorillas-main/*
+snake-app/*
+angry-gorillas/*
+angry-gorillas-cljs/*
+hello-world/*
+.clj-kondo/.cache/*
