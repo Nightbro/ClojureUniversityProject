@@ -57,3 +57,4 @@ angry-gorillas/*
 angry-gorillas-cljs/*
 hello-world/*
 .clj-kondo/.cache/*
+gorilla-game/plan.txt
