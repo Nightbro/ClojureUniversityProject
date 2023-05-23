@@ -1,13 +1,13 @@
-## ClojureUniversityProject
+# ClojureUniversityProject
 An university project made in clojure. Started as a Game application, ended as a web application for body measurements. 
 
-# Used repositories:
+## Used repositories:
 https://repo.clojars.org/ring/
 https://repo.clojars.org/cheshire/cheshire/
 
 
 
-## Plan
+# Plan
 - [x] Setup an app
 - [x] Add pages and a basic style
 - [x] Add data storage for users
