@@ -15,7 +15,7 @@
    (hiccup/html
     [:h1 "Please wait!"]
     [:p "You are being logged out."] 
-    [:script "setTimeout(function() { window.location.href = '/';console.log('Timeout complete'); }, 5000);"])))
+    [:script "setTimeout(function() { window.location.href = '/';console.log('Timeout complete'); }, 2000);"])))
 
 
 

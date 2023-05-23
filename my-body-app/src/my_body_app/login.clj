@@ -1,19 +1,15 @@
 (ns my-body-app.login
   (:require [my-body-app.layout :refer [layout]]
             [hiccup.core :as hiccup]
-            [my-body-app.utils :refer [write-current-user get-users hash-password]]
+            [my-body-app.utils :refer [write-current-user read-current-user authenticate-user]]
             [clojure.java.io :as io]
-            [cheshire.core :as json]))
+            [cheshire.core :as json]
+            [ring.util.response :refer [redirect]]))
 
 
 
 
-(defn authenticate-user [username password]
-  (let [users (get-users)
-        user (first (filter #(= username (:username %)) (:users users)))]
-    (and user
-         (= (hash-password password) (:password user))
-         user)))
+
 
 (defn handle-login [params]
 
@@ -29,18 +25,22 @@
 
 
 (defn login-page []
-   (layout 
-    "Login page" 
-    (hiccup/html
-     [:h1 "Please Log In"]
-     [:form {:action "/login" :method "POST"}
-      [:label {:for "username"} "Username:"]
-      [:input {:type "text" :name "username"}]
-      [:br]
-      [:label {:for "password"} "Password:"]
-      [:input {:type "password" :name "password"}]
-      [:br]
-      [:input {:type "submit" :value "Log In"}]])))
+  (let [current-user (read-current-user)]
+    (if (empty? current-user)
+
+      (layout
+       "Login page"
+       (hiccup/html
+        [:h1 "Please Log In"]
+        [:form {:action "/login" :method "POST"}
+         [:label {:for "username" :style "display:inline-block; width:120px; margin-bottom:20px;" } "Username:" ]
+         [:input {:type "text" :name "username"}]
+         [:br]
+         [:label {:for "password" :style "display:inline-block; width:120px; margin-bottom:20px;" } "Password:"]
+         [:input {:type "password" :name "password"}]
+         [:br]
+         [:input {:type "submit" :value "Log In" :style "margin-left:120px; width:120px; cursor:pointer;"}]]))
+      (redirect "/"))))
    
 
 

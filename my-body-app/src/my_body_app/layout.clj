@@ -1,5 +1,44 @@
 (ns my-body-app.layout
-  (:require [hiccup.core :as hiccup]))
+  (:require [hiccup.core :as hiccup]
+            [my-body-app.utils :refer [read-current-user]]))
+
+
+(defn menu []
+  (let [user (read-current-user)]
+    (if (empty? user)
+      [:div.menu
+       [:a.menu-link {:href "/"} "Home"]
+       [:br]
+       [:a.menu-link {:href "/login"} "Login"]
+       [:br]
+       [:a.menu-link {:href "/user"} "Register"]]
+      (if (:isAdmin user) [:div.menu
+                           [:a.menu-link {:href "/"} "Home"]
+                           [:br]
+                           [:a.menu-link {:href "/logout"} "Logout"]
+                           [:br]
+                           [:a.menu-link {:href "/bmi"} "BMI Calculator"]
+                           [:br]
+                           [:a.menu-link {:href "/measurements"} "Body measurements"]
+                           [:br]
+                           [:a.menu-link {:href "/plan"} "Meal Plan"]
+                           [:br]
+                           [:a.menu-link {:href "/users"} "(A) Users"]
+                           [:br]
+                           [:a.menu-link {:href "/meals"} "(A) Meals"]]
+          [:div.menu
+           [:a.menu-link {:href "/"} "Home"]
+           [:br]
+           [:a.menu-link {:href "/logout"} "Logout"]
+           [:br]
+           [:a.menu-link {:href "/bmi"} "BMI Calculator"]
+           [:br]
+           [:a.menu-link {:href "/measurements"} "Body measurements"] 
+           [:br]
+           [:a.menu-link {:href "/plan"} "Meal Plan"]])
+      )
+    )
+  )
 
 (defn layout [title content]
   (hiccup/html
@@ -20,11 +59,6 @@
     [:body
      [:div.header "My body tracker"]
      [:div.content
-      [:div.menu
-       [:a.menu-link {:href "/"} "Home"]
-       [:br]
-       [:a.menu-link {:href "/login"} "Login"]
-       [:br]
-       [:a.menu-link {:href "/about"} "About"]]
+      (menu)
       [:div.main content]]]
     [:div.footer "Ivan Jordanovic 2022/3735 @ Faculty of Organisational Sciences - University of Belgrade"]]))

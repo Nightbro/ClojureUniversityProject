@@ -26,3 +26,10 @@
   (let [user-without-password (dissoc user :password)
         json-str (json/generate-string user-without-password)]
     (spit "resources/current.json" json-str)))
+
+(defn authenticate-user [username password]
+  (let [users (get-users)
+        user (first (filter #(= username (:username %)) (:users users)))]
+    (and user
+         (= (hash-password password) (:password user))
+         user)))
