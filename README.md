@@ -8,14 +8,15 @@ https://repo.clojars.org/cheshire/cheshire/
 
 
 # Plan
-- [ ] Setup an app - Done
-- [ ] Add pages and a basic style - Done
-- [ ] Add a login functionality - Done
-  - [ ] Style 
-  - [ ]Hashing of the password - Done
+- [x] Setup an app
+- [x] Add pages and a basic style
+- [x] Add data storage for users
+- [ ] Add a login functionality
+  - [ ] Style
+  - [x] Hashing of the password 
   - [ ] Different menu depending on whether you are logged in or not
-- [ ] Add a session to store information about logged user - Done, used current.json file since the session cookies didnt seem to work
-  - [ ] remove password from the logged user info - Done
+- [x] Add a session to store information about logged user - Done, used current.json file since the session cookies didnt seem to work
+  - [x] remove password from the logged user info
 - [ ] Add a BMI calculator page, with option to store information in database
 - [ ] Add a new body measurments page
 - [ ] Add a update body measuremnts page
