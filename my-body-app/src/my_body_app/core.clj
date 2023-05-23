@@ -5,12 +5,14 @@
             [ring.middleware.defaults :refer [wrap-defaults site-defaults]]
             [ring.util.response :as response]
             [my-body-app.home :as home]
-            [my-body-app.login :as login]))
+            [my-body-app.login :as login]
+            [my-body-app.logout :as logout]))
 
 (defroutes app-routes
   (GET "/" [] (home/home-page))
   (GET "/login" [] (login/login-page))
   (POST "/login" {params :params} (login/handle-login params))
+  (GET "/logout" [] (logout/logout-page))
   (route/not-found "Not Found")
   (route/not-found {:status 404 :body "Page not found."}))
   

@@ -7,7 +7,7 @@
       "email": "johndoe@example.com",
       "gender": "Male",
       "phone": "0631234567",
-      "password": "hashed_password",
+      "password" : "b2867617492e26c338ab49f72afabc984d798b59755a27e312b953716ae964d7",
       "isAdmin": true
     }
   ]

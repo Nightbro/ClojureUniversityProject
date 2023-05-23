@@ -1,29 +1,29 @@
 (ns my-body-app.login
   (:require [my-body-app.layout :refer [layout]]
             [hiccup.core :as hiccup]
+            [my-body-app.utils :refer [write-current-user get-users hash-password]]
             [clojure.java.io :as io]
             [cheshire.core :as json]))
 
-(defn get-users []
-  (-> "users.json"
-      io/resource
-      slurp
-      (json/parse-string true)))
+
 
 
 (defn authenticate-user [username password]
-  (println username)
   (let [users (get-users)
         user (first (filter #(= username (:username %)) (:users users)))]
     (and user
-         (= password (:password user))
+         (= (hash-password password) (:password user))
          user)))
 
 (defn handle-login [params]
 
   (let [user (authenticate-user (:username params) (:password params))]
     (if user
-      (str "Welcome, " (:name user))
+      (do 
+        (write-current-user user) 
+        (hiccup/html
+         [:script "setTimeout(function() { window.location.href = '/';console.log('Timeout complete'); }, 500);"]))
+      
       "Invalid username or password.")))
 
 
