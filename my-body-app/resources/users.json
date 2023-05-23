@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "name": "Ivan",
+      "surname": "Jordanovic",
+      "email": "johndoe@example.com",
+      "gender": "Male",
+      "phone": "0631234567",
+      "password": "hashed_password",
+      "isAdmin": true
+    }
+  ]
+}
