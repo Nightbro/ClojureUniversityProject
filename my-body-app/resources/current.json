@@ -1,1 +1,1 @@
-{"username":"admin","name":"Ivan","surname":"Jordanovic","email":"johndoe@example.com","gender":"Male","phone":"0631234567","isAdmin":true}
+{"email":"johndoe@example.com","isAdmin":true,"phone":"0631234567","name":"Ivan","username":"admin","surname":"Jordanovic","info":{"height":"184","weight":"90","age":"29","gender":"male","activity":"moderately-active","calorie-intake":2703.2000000000003,"bmi":26.58317580340265},"gender":"Male"}

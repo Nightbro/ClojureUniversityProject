@@ -33,3 +33,13 @@
     (and user
          (= (hash-password password) (:password user))
          user)))
+
+(defn update-info [username new-info]
+  (let [data (get-users)
+        users (:users data)
+        updated-users (map #(if (= (:username %) username)
+                              (assoc % :info new-info)
+                              %)
+                           users)
+        updated-data (assoc data :users updated-users)]
+    (spit "resources/users.json" (json/generate-string updated-data))))

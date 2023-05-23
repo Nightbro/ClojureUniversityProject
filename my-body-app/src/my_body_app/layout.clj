@@ -21,11 +21,7 @@
                            [:br]
                            [:a.menu-link {:href "/measurements"} "Body measurements"]
                            [:br]
-                           [:a.menu-link {:href "/plan"} "Meal Plan"]
-                           [:br]
-                           [:a.menu-link {:href "/users"} "(A) Users"]
-                           [:br]
-                           [:a.menu-link {:href "/meals"} "(A) Meals"]]
+                           [:a.menu-link {:href "/plan"} "Meal Plan"]]
           [:div.menu
            [:a.menu-link {:href "/"} "Home"]
            [:br]
@@ -48,8 +44,8 @@
       "body { background-color: lightblue; padding: 0px; margin: 0px}"
       ".header { background-color: #333; color: white; padding: 10px; text-transform: uppercase; font-size:24px }"
       ".content { display: flex; min-height: calc(100vh - 70px); }"
-      ".menu { flex: 0 0 200px; background-color: #f1f1f1; padding: 20px;}"
-      ".main { flex: 1; padding: 10px; }"
+      ".menu { flex: 0 0 200px; background-color: #f1f1f1; padding: 20px; padding-top:40px;}"
+      ".main { flex: 1; padding: 40px; }"
       ".footer { background-color: #333; color: white; padding: 10px; text-align: center;  position: sticky; bottom: 0;}"
       "a { text-decoration: none; color: #333; }"
       "a:hover { color: #666; }"

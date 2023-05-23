@@ -10,7 +10,7 @@
                  [ring/ring-mock "0.4.0"]
                  [ring/ring-defaults "0.3.4"]
                  [ring/ring-jetty-adapter "1.9.6"] 
-                 [ring/ring-anti-forgery "1.3.0"]
+                 [ring/ring-anti-forgery "1.3.0"] 
                  [lein-ring "0.12.5"]
                  [hiccup "1.0.5"]
                  [cheshire "5.11.0"]]

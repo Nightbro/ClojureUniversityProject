@@ -9,8 +9,6 @@
             [my-body-app.logout :as logout]
             [my-body-app.bmi :as bmi]
             [my-body-app.user :as user]
-            [my-body-app.users :as users]
-            [my-body-app.meals :as meals]
             [my-body-app.plan :as plan]
             [my-body-app.measurements :as measurements]))
 
@@ -20,14 +18,10 @@
   (POST "/login" {params :params} (login/handle-login params))
   (GET "/bmi" [] (bmi/bmi-page))
   (POST "/bmi" {params :params} (bmi/handle-bmi-changes params))
-  (GET "/body-measurements" [] (measurements/measurements-page))
-  (POST "/body-measurements" {params :params} (measurements/handle-changes params))
+  (GET "/measurements" [] (measurements/measurements-page))
+  (POST "/measurements" {params :params} (measurements/handle-changes params))
   (GET "/user" [] (user/user-page))
   (POST "/user" {params :params} (user/handle-changes params))
-  (GET "/users" [] (users/users-page))
-  (POST "/users" {params :params} (users/handle-changes params))
-  (GET "/meal" [] (meals/meals-page))
-  (POST "/meal" {params :params} (meals/handle-changes params))
   (GET "/plan" [] (plan/plan-page))
   (POST "/plan" {params :params} (plan/handle-changes params))
   (GET "/logout" [] (logout/logout-page))
