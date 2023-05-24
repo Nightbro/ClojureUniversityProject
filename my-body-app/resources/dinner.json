@@ -1,0 +1,45 @@
+{
+    "meals": [
+        {
+          "title": "Grilled Salmon with Roasted Vegetables",
+          "calories": "450",
+          "description": "Grilled salmon fillet served with a side of roasted vegetables."
+        },
+        {
+          "title": "Zucchini Noodles with Marinara Sauce",
+          "calories": "300",
+          "description": "Spiralized zucchini noodles topped with homemade marinara sauce."
+        },
+        {
+          "title": "Lemon Herb Chicken with Steamed Broccoli",
+          "calories": "380",
+          "description": "Juicy lemon herb chicken breast paired with steamed broccoli florets."
+        },
+        {
+          "title": "Shrimp Stir-Fry with Brown Rice",
+          "calories": "400",
+          "description": "Succulent shrimp and colorful vegetables stir-fried and served over a bed of brown rice."
+        },
+        {
+          "title": "Vegetable Curry with Quinoa",
+          "calories": "350",
+          "description": "A flavorful vegetable curry made with a variety of spices, served with quinoa."
+        },
+        {
+          "title": "Baked Chicken Breast with Sweet Potato Mash",
+          "calories": "380",
+          "description": "Tender baked chicken breast served with creamy sweet potato mash."
+        },
+        {
+          "title": "Beef and Broccoli Stir-Fry",
+          "calories": "400",
+          "description": "Tender beef strips, broccoli florets, and a savory stir-fry sauce, served over steamed rice."
+        },
+        {
+          "title": "Eggplant Parmesan with Whole Wheat Pasta",
+          "calories": "420",
+          "description": "Breaded and baked eggplant slices topped with marinara sauce and melted cheese, served with whole wheat pasta."
+        }
+      ]
+      
+}

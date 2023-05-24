@@ -23,7 +23,7 @@ https://repo.clojars.org/cheshire/cheshire/
   - [x] remove password from the logged user info
 - [x] Add a BMI calculator page, with option to store information in database
 - [x] Register user
-- [ ] View a randomly generated plan for today
+- [x] View a randomly generated plan for today
 
 - [ ] To add 
     - [x] Round up to two decimals the BMI and calory intake
@@ -34,4 +34,5 @@ https://repo.clojars.org/cheshire/cheshire/
     - [ ] Review history of body measurements
     - [ ] Page to review and update your general information made on registration
     - [ ] Migrate to a database engine
+    - [ ] Add more options to Meal plan
 

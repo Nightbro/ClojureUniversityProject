@@ -20,7 +20,6 @@
    (GET "/user" [] (user/user-page))
   (POST "/user" {params :params} (user/handle-changes params))
   (GET "/plan" [] (plan/plan-page))
-  (POST "/plan" {params :params} (plan/handle-changes params))
   (GET "/logout" [] (logout/logout-page))
   (route/not-found "Not Found")
   (route/not-found {:status 404 :body "Page not found."}))

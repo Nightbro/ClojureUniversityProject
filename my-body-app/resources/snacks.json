@@ -1,0 +1,83 @@
+{
+    "meals":[
+        {
+          "title": "Carrot Sticks with Hummus",
+          "calories": "100",
+          "description": "Fresh carrot sticks served with a side of hummus for dipping."
+        },
+        {
+          "title": "Apple Slices with Almond Butter",
+          "calories": "150",
+          "description": "Crisp apple slices paired with a dollop of almond butter."
+        },
+        {
+          "title": "Greek Yogurt with Berries",
+          "calories": "120",
+          "description": "Creamy Greek yogurt topped with a handful of mixed berries."
+        },
+        {
+          "title": "Celery Sticks with Peanut Butter",
+          "calories": "90",
+          "description": "Crunchy celery sticks filled with creamy peanut butter."
+        },
+        {
+          "title": "Hard-Boiled Eggs",
+          "calories": "70",
+          "description": "Protein-packed hard-boiled eggs sprinkled with a pinch of salt and pepper."
+        },
+        {
+          "title": "Trail Mix",
+          "calories": "150",
+          "description": "A mix of nuts, dried fruits, and dark chocolate chips for a satisfying snack."
+        },
+        {
+          "title": "Cucumber Slices with Tzatziki",
+          "calories": "60",
+          "description": "Refreshing cucumber slices paired with a creamy and tangy tzatziki dip."
+        },
+        {
+          "title": "Edamame",
+          "calories": "100",
+          "description": "Steamed edamame pods sprinkled with a touch of sea salt."
+        },
+        {
+          "title": "Rice Cakes with Avocado",
+          "calories": "130",
+          "description": "Light and crispy rice cakes topped with mashed avocado and a sprinkle of chili flakes."
+        },
+        {
+          "title": "Mixed Berry Smoothie",
+          "calories": "120",
+          "description": "A refreshing smoothie made with a blend of mixed berries and a splash of coconut water."
+        },
+        {
+          "title": "Roasted Chickpeas",
+          "calories": "140",
+          "description": "Crispy roasted chickpeas seasoned with spices like paprika and cumin."
+        },
+        {
+          "title": "Yogurt Covered Pretzels",
+          "calories": "160",
+          "description": "Mini pretzels coated in a layer of creamy yogurt for a sweet and salty treat."
+        },
+        {
+          "title": "Sliced Bell Peppers with Guacamole",
+          "calories": "70",
+          "description": "Colorful bell pepper strips served with homemade guacamole for dipping."
+        },
+        {
+          "title": "Cherry Tomatoes with Mozzarella",
+          "calories": "120",
+          "description": "Sweet cherry tomatoes paired with bite-sized mozzarella balls and a drizzle of balsamic glaze."
+        },
+        {
+          "title": "Almond and Cranberry Energy Balls",
+          "calories": "90",
+          "description": "Homemade energy balls made with almonds, cranberries, and a hint of honey."
+        },
+        {
+          "title": "Kale Chips",
+          "calories": "50",
+          "description": "Crispy kale leaves lightly seasoned and baked to perfection."
+        }]
+}

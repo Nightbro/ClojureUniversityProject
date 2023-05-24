@@ -1,0 +1,55 @@
+{
+    "meals": [
+        {
+          "title": "Grilled Chicken Salad",
+          "calories": "400",
+          "description": "Grilled chicken breast, mixed greens, cherry tomatoes, cucumbers, and balsamic vinaigrette."
+        },
+        {
+          "title": "Quinoa and Vegetable Stir-Fry",
+          "calories": "350",
+          "description": "A stir-fry dish made with quinoa, assorted vegetables, and a light soy sauce."
+        },
+        {
+          "title": "Turkey Wrap",
+          "calories": "320",
+          "description": "Sliced turkey breast, lettuce, tomato, and whole wheat wrap."
+        },
+        {
+          "title": "Caprese Salad",
+          "calories": "300",
+          "description": "Fresh mozzarella, sliced tomatoes, and basil drizzled with balsamic glaze."
+        },
+        {
+          "title": "Vegetable Quinoa Bowl",
+          "calories": "380",
+          "description": "A nourishing bowl filled with cooked quinoa, roasted vegetables, and a sprinkle of feta cheese."
+        },
+        {
+          "title": "Mediterranean Hummus Wrap",
+          "calories": "350",
+          "description": "A flavorful wrap with hummus, roasted red peppers, feta cheese, and spinach."
+        },
+        {
+          "title": "Salmon and Avocado Sushi",
+          "calories": "400",
+          "description": "Sushi rolls made with fresh salmon, creamy avocado, and sushi rice."
+        },
+        {
+          "title": "Chicken Caesar Wrap",
+          "calories": "380",
+          "description": "Grilled chicken, romaine lettuce, Parmesan cheese, and Caesar dressing wrapped in a whole wheat tortilla."
+        },
+        {
+          "title": "Greek Chicken Pita",
+          "calories": "350",
+          "description": "Grilled chicken, diced cucumbers, tomatoes, and tzatziki sauce stuffed in a warm pita bread."
+        },
+        {
+          "title": "Vegetarian Buddha Bowl",
+          "calories": "400",
+          "description": "A nourishing bowl with a base of brown rice or quinoa, topped with roasted vegetables, chickpeas, and a drizzle of tahini sauce."
+        }
+      ]
+      
+}

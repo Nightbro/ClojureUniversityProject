@@ -1,0 +1,80 @@
+{
+    "meals": [
+        {
+          "title": "Greek Yogurt Parfait",
+          "calories": "250",
+          "description": "Layers of Greek yogurt, fresh berries, and granola."
+        },
+        {
+          "title": "Vegetable Omelette",
+          "calories": "300",
+          "description": "An omelette made with assorted vegetables and served with whole wheat toast."
+        },
+        {
+          "title": "Avocado Toast",
+          "calories": "350",
+          "description": "Toasted whole grain bread topped with mashed avocado, cherry tomatoes, and a sprinkle of sea salt."
+        },
+        {
+          "title": "Spinach and Mushroom Scramble",
+          "calories": "280",
+          "description": "Scrambled eggs with sautéed spinach and mushrooms, served with a side of whole wheat toast."
+        },
+        {
+          "title": "Banana Pancakes",
+          "calories": "320",
+          "description": "Fluffy pancakes made with mashed bananas, topped with a drizzle of maple syrup."
+        },
+        {
+          "title": "Quinoa Breakfast Bowl",
+          "calories": "380",
+          "description": "A bowl of cooked quinoa topped with sliced fruits, nuts, and a drizzle of honey."
+        },
+        {
+          "title": "Egg and Avocado Wrap",
+          "calories": "300",
+          "description": "Scrambled eggs, sliced avocado, and salsa wrapped in a whole wheat tortilla."
+        },
+        {
+          "title": "Berry Smoothie",
+          "calories": "200",
+          "description": "A refreshing smoothie made with mixed berries, Greek yogurt, and a splash of almond milk."
+        },
+        {
+          "title": "Cottage Cheese with Fresh Fruit",
+          "calories": "220",
+          "description": "Creamy cottage cheese topped with a variety of fresh fruits and a sprinkle of cinnamon."
+        },
+        {
+          "title": "Peanut Butter Banana Toast",
+          "calories": "280",
+          "description": "Toasted whole grain bread spread with peanut butter and topped with sliced bananas."
+        },
+        {
+          "title": "Yogurt and Granola Parfait",
+          "calories": "300",
+          "description": "Creamy yogurt layered with crunchy granola and your choice of sliced fruits."
+        },
+        {
+          "title": "Smoked Salmon Bagel",
+          "calories": "350",
+          "description": "Toasted bagel topped with smoked salmon, cream cheese, and sliced red onions."
+        },
+        {
+          "title": "Veggie Breakfast Burrito",
+          "calories": "320",
+          "description": "A hearty burrito filled with scrambled eggs, black beans, bell peppers, and salsa."
+        },
+        {
+          "title": "Oatmeal with Berries and Almonds",
+          "calories": "280",
+          "description": "Warm oatmeal topped with a mix of fresh berries, sliced almonds, and a drizzle of honey."
+        },
+        {
+          "title": "Egg and Spinach Breakfast Sandwich",
+          "calories": "330",
+          "description": "A breakfast sandwich with a toasted English muffin, scrambled eggs, spinach, and a slice of cheese."
+        }
+      ]
+      
+}

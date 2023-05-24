@@ -49,3 +49,39 @@
                            users)
         updated-data (assoc data :users updated-users)]
     (spit "resources/users.json" (json/generate-string updated-data))))
+
+
+(defn get-breakfast []
+  (-> "breakfast.json"
+      io/resource
+      slurp
+      (json/parse-string true)))
+
+(defn get-snacks []
+  (-> "snacks.json"
+      io/resource
+      slurp
+      (json/parse-string true)))
+
+(defn get-lunch []
+  (-> "lunch.json"
+      io/resource
+      slurp
+      (json/parse-string true)))
+
+(defn get-dinner []
+  (-> "dinner.json"
+      io/resource
+      slurp
+      (json/parse-string true)))
+
+
+(defn get-all-meals []
+  (let [breakfast (get-breakfast)
+        snack (get-snacks)
+        lunch (get-lunch)
+        dinner (get-dinner)]
+    {:breakfast breakfast
+     :snack snack
+     :lunch lunch
+     :dinner dinner}))
