@@ -3,13 +3,6 @@
             [hiccup.core :as hiccup]
             [my-body-app.utils :refer [read-current-user]]))
 
-(defn home-page-old []
-  (layout 
-   "Home page"
-  (hiccup/html
-   [:h1 "Hello " (:name (read-current-user)) ", and welcome to the Home Page!" ]
-   [:p "This is the content of the home page."])))
-
 (defn home-page []
   (let [user (read-current-user)]
     (if (empty? user)

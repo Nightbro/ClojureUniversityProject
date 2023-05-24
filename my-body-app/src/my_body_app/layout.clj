@@ -19,8 +19,6 @@
                            [:br]
                            [:a.menu-link {:href "/bmi"} "BMI Calculator"]
                            [:br]
-                           [:a.menu-link {:href "/measurements"} "Body measurements"]
-                           [:br]
                            [:a.menu-link {:href "/plan"} "Meal Plan"]]
           [:div.menu
            [:a.menu-link {:href "/"} "Home"]
@@ -28,8 +26,6 @@
            [:a.menu-link {:href "/logout"} "Logout"]
            [:br]
            [:a.menu-link {:href "/bmi"} "BMI Calculator"]
-           [:br]
-           [:a.menu-link {:href "/measurements"} "Body measurements"] 
            [:br]
            [:a.menu-link {:href "/plan"} "Meal Plan"]])
       )

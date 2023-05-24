@@ -22,10 +22,7 @@ https://repo.clojars.org/cheshire/cheshire/
 - [x] Add a session to store information about logged user - Done, used current.json file since the session cookies didnt seem to work
   - [x] remove password from the logged user info
 - [x] Add a BMI calculator page, with option to store information in database
-- [ ] Add a body measurements page
-    - [ ] View your body measurements
-    - [ ] Update your body measurments
-- [ ] Register user
+- [x] Register user
 - [ ] View a randomly generated plan for today
 
 - [ ] To add 

@@ -9,8 +9,7 @@
             [my-body-app.logout :as logout]
             [my-body-app.bmi :as bmi]
             [my-body-app.user :as user]
-            [my-body-app.plan :as plan]
-            [my-body-app.measurements :as measurements]))
+            [my-body-app.plan :as plan]))
 
 (defroutes app-routes
   (GET "/" [] (home/home-page))
@@ -18,9 +17,7 @@
   (POST "/login" {params :params} (login/handle-login params))
   (GET "/bmi" [] (bmi/bmi-page))
   (POST "/bmi" {params :params} (bmi/handle-bmi-changes params))
-  (GET "/measurements" [] (measurements/measurements-page))
-  (POST "/measurements" {params :params} (measurements/handle-changes params))
-  (GET "/user" [] (user/user-page))
+   (GET "/user" [] (user/user-page))
   (POST "/user" {params :params} (user/handle-changes params))
   (GET "/plan" [] (plan/plan-page))
   (POST "/plan" {params :params} (plan/handle-changes params))

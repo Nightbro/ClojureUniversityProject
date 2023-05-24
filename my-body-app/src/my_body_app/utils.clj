@@ -22,6 +22,12 @@
        slurp
        (json/parse-string true)))
 
+
+(defn write-users [users] 
+  (let [json-str (json/generate-string users)]
+    (spit "resources/users.json" json-str))
+  )
+
 (defn write-current-user [user]
   (let [user-without-password (dissoc user :password)
         json-str (json/generate-string user-without-password)]
