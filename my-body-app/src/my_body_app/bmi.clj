@@ -4,13 +4,18 @@
             [my-body-app.utils :refer [read-current-user write-current-user update-info]]
             [ring.util.response :refer [redirect]]))
 
+(defn ratio-to-decimal [ratio]
+  (.doubleValue ratio))
+
+(defn round [s n]
+  (.setScale (bigdec n) s java.math.RoundingMode/HALF_EVEN))
 
 (defn calculate-bmi [params]
-  (let [weight (-> params :weight (clojure.edn/read-string))
+  (let [weight (-> params :weight (clojure.edn/read-string) )
         height (-> params :height (clojure.edn/read-string) (/ 100))]
     (if (some nil? [weight height])
       nil
-       (/ weight (* height height)) )))
+        (ratio-to-decimal (/ weight (* height height)))) ))
 
 (defn calculate-bmr [params]
   (let [weight (-> params :weight (clojure.edn/read-string))
@@ -35,8 +40,8 @@
         "very-active" (* bmr 1.725)
         "extra-active" (* bmr 1.9)))))
 
+
 (defn handle-bmi-changes [params]
-  (println (calculate-bmi params))
   (let [user (read-current-user)
         info (:info user)
         updated-info (assoc info
@@ -45,8 +50,8 @@
                             :age (:age params)
                             :gender (:gender params)
                             :activity (:activity params)
-                            :calorie-intake (calculate-calorie-intake params)
-                            :bmi (calculate-bmi params))]
+                            :calorie-intake (round 0 (calculate-calorie-intake params))
+                            :bmi (round 4 (calculate-bmi params)))]
     (update-info (:username user) updated-info)
     (write-current-user (assoc user :info updated-info))
     (redirect "/bmi")))
@@ -103,4 +108,4 @@
         (when (not (empty? (str(:bmi info))))
           [:p [:b "BMI: "]   (:bmi info)])
         (when (not (empty? (str(:calorie-intake info))))
-          [:p [:b "Calorie Intake: "] (:calorie-intake info) " Calories/day"])]]))))
+          [:p [:b "Base Calorie Intake to maintain weight: "] (:calorie-intake info) " Calories/day"])]]))))
